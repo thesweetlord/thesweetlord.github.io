@@ -91,4 +91,60 @@ HTML
     </form>
 </body>
 </html>
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Security: Prevent clickjacking -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <!-- Security: Basic XSS protection -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
+    <title>Password Check</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .password-box {
+            width: 300px;
+            padding: 5px;
+            font-size: 16px;
+            border: 2px solid #000;
+            margin: 10px auto;
+            display: block;
+        }
+        .button {
+            padding: 5px 15px;
+            font-size: 14px;
+            background-color: #0000FF;
+            color: white;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #00008B;
+        }
+        #content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="login">
+        <input type="password" class="password-box" id="password" placeholder="Enter password...">
+        <br>
+        <input type="button" class="button" value="Login" onclick="checkPassword()">
+    </div>
+    <div id="content">
+        <h1>Welcome!</h1>
+        <p>You’ve passed the password check.</p>
+    </div>
+
+    <script>
+        var _0x5e1f=['value','Incorrect\x20password!','','login','none','content','block','getElementById','password','addEventListener','keypress','Enter'];function checkPassword(){var _0x12ab=document[_0x5e1f[7]](_0x5e1f[8])[_0x5e1f[0]],_0x34cd='mysecret';if(_0x12ab===_0x34cd){document[_0x5e1f[7]](_0x5e1f[3])['style']['display']=_0x5e1f[4],document[_0x5e1f[7]](_0x5e1f[5])['style']['display']=_0x5e1f[6];}else{alert(_0x5e1f[1]),document[_0x5e1f[7]](_0x5e1f[8])[_0x5e1f[0]]=_0x5e1f[2];}}document[_0x5e1f[7]](_0x5e1f[8])[_0x5e1f[9]](_0x5e1f[10],function(_0x789a){if(_0x789a['key']===_0x5e1f[11]){checkPassword();}});
+    </script>
+</body>
+</html>
 ​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
