@@ -27,6 +27,61 @@ HTML
 </head>
 <body>
     <h1>Google</h1>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Security: Prevent clickjacking -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <!-- Security: Basic XSS protection -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
+    <title>Password Check</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .password-box {
+            width: 300px;
+            padding: 5px;
+            font-size: 16px;
+            border: 2px solid #000;
+            margin: 10px auto;
+            display: block;
+        }
+        .button {
+            padding: 5px 15px;
+            font-size: 14px;
+            background-color: #0000FF;
+            color: white;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #00008B;
+        }
+        #content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="login">
+        <input type="password" class="password-box" id="password" placeholder="Enter password...">
+        <br>
+        <input type="button" class="button" value="Login" onclick="checkPassword()">
+    </div>
+    <div id="content">
+        <h1>Welcome!</h1>
+        <p>You’ve passed the password check.</p>
+    </div>
+
+    <script>
+        function checkPassword() {
+            const password = document.getElementById('password').value;
+            const correctPassword = 'LOVEISCHRISTFAMILY12309564871666-2345YUGJKWNJWV-UETEJFJD'; //
     <form>
         <input type="text" class="search-box" placeholder="Search...">
         <div class="buttons">
