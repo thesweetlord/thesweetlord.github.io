@@ -1,1 +1,10 @@
 Define a package manager to update.
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: ${{ github.actor != 'github-actions[bot]' && github.event_name != 'push' || github.event.pusher.name != 'github-actions[bot]' }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      #.1

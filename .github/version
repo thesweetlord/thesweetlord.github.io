@@ -1,1 +1,7 @@
-Dependabot configuration syntax to use. Always: 2
+
+
+
+
+
+
+Define whether to look for version updates: daily, weekly, or monthly.
