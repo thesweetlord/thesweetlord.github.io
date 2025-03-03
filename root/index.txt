@@ -47,31 +47,4 @@
         <p>You’ve passed the password check.</p>
     </div>
 
-    <script>
-        function checkPassword() {
-            const password = document.getElementById('password').value;
-            const correctPassword = 'LOVEISCHRISTFAMILY-21NJOGEVNJVK-EFNJVFOLS-POEIRUJTKD-MCNVNBMV'; 
-            if (password === correctPassword) {
-                document.getElementById('login').style.display = 'none';
-                document.getElementById('content').style.display = 'block';
-            } else {
-                alert('Incorrect password!');
-                document.getElementById('password').value = '';
-            }
-        }
-
-        document.getElementById('password').addEventListener('keypress', function (event) {
-            if (event.key === 'Enter') {
-                checkPassword();
-            }
-        });
-    </script>
-    <form>
-        <input type="text" class="search-box" placeholder="Search...">
-        <div class="buttons">
-            <input type="submit" value="Google Search">
-            <input type="button" value="I'm Feeling Lucky">
-        </div>
-    </form>
-</body>
-</html>
+    < ▋
